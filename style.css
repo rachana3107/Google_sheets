@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#toolbar {
+    margin-bottom: 10px;
+    display: flex; /* Use flexbox for better alignment */
+    justify-content: space-between; /* Space out buttons */
+    padding: 10px; /* Add padding for better spacing */
+    background-color: #f1f1f1; /* Light background for the toolbar */
+    border: 1px solid #ccc; /* Border for the toolbar */
+}
+
+#toolbar button {
+    margin-right: 5px; /* Space between buttons */
+    padding: 5px 10px; /* Padding for buttons */
+    cursor: pointer; /* Pointer cursor for buttons */
+    border: none; /* Remove default border */
+    border-radius: 3px; /* Rounded corners */
+    background-color: #e7e7e7; /* Button background color */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+#toolbar button:hover {
+    background-color: #d0d0d0; /* Darker background on hover */
+}
+
+
+#spreadsheet {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 40px;
+    border: 1px solid #ccc;
+}
+
+.cell {
+    border: 1px solid #ccc;
+    padding: 10px; /* Increased padding for better spacing */
+    text-align: center;
+    transition: background-color 0.3s;
+    min-height: 40px; /* Ensure a minimum height for cells */
+}
+
+.cell:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+}
+
+.cell.selected {
+    background-color: #d0e0f0; /* Highlight selected cell */
+}
+
+
+.cell:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+}
+
+.cell.selected {
+    background-color: #d0e0f0; /* Highlight selected cell */
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
